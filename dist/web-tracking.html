@@ -1,0 +1,693 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Tracking</title>
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- <link href="css/flat-ui-pro.css" rel="stylesheet"> -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/templatestyle.css" rel="stylesheet" />
+
+    <!--<link href="css/flat-ui-pro.css" rel="stylesheet">-->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/builder.css" rel="stylesheet">
+    <link href="css/spectrum.css" rel="stylesheet">
+    <link href="css/chosen.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/customstyles.css" rel="stylesheet">
+</head>
+<body class="pace-done">
+    <form id="TemplateBuilderForm" runat="server"></form>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-responsive" src="images/templatelogo.png" />
+                            </span>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="">Profile</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="">Mailbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IVO+
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-tachometer"></i><span class="nav-label">Dashboards</span></a>
+                    </li>
+                    <!--
+                                        <li>
+                                            <a href="layouts.html"><i class="fa fa-user"></i> <span class="nav-label">Leads &amp; Segments</span></a>
+                                        </li>
+                    -->
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Leads &amp; Segments</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse in">
+                            <li class="active"><a href="#">LEAD INFORMATION</a></li>
+                            <li><a href="#">BLACK LIST <span>(<i>1</i>)</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-clock-o"></i><span class="nav-label">Activities</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-list"></i><span class="nav-label">Campigns</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-signal"></i><span class="nav-label">Reporting</span>  </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                        <form role="search" class="navbar-form-custom" action="">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i><span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="" class="pull-left">
+                                            <img alt="image" class="img-circle" src="images/logo.png">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="">
+                                            <i class="fa fa-envelope"></i><strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i><span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i>You have 16 messages
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i>3 New Followers
+                                            <span class="pull-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-sign-out"></i>Log out
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="pull-right">
+                                <a data-toggle="modal" class="btn btn-primary" href="#modal-form">Create new tracking</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        &nbsp;
+                    </div>
+
+                    <div class="graphs ibox">
+                        <div style="display: block;">
+                            <!-- <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"> -->
+                            <div class="slimScrollDiv">
+                                <!-- <div class="scroll_content" style="overflow: hidden; width: auto; height: 200px;"> -->
+                                <div class="scroll_content">
+                                    <div class="row">
+                                        <div class="col-xs-push-1 col-lg-8">
+                                            <div class="row">
+                                                <div class="ibox float-e-margins">
+                                                    <canvas width="819" style="width: 819px; height: 146px;" id="lineChartmain" height="146"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-push-1 col-lg-3">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <h5 class="m-b-xs">Tracking this month</h5>
+                                                    <h1 class="no-margins">12.813</h1>
+                                                </div>
+                                            </div>
+                                            <table class="table small m-t-sm">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <strong>9,125</strong> uniques
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>1,257</strong> referrals
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>12</strong> websites
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 193.237px;">
+                                </div>
+                                <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="sortable-view" class="col-xs-12">
+                        <div class="col-xs-12 ui-sortable">
+                            <div class="graphs ibox">
+                                <div class="ibox-title">
+                                    <h5>Track my page</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Config option 1</a>
+                                            </li>
+                                            <li><a href="#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ibox-content" style="display: block;">
+                                    <!-- <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"> -->
+                                    <div class="slimScrollDiv">
+                                        <!-- <div class="scroll_content" style="overflow: hidden; width: auto; height: 200px;"> -->
+                                        <div class="scroll_content">
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <div class="row">
+                                                        <div class="ibox float-e-margins">
+                                                            <canvas width="819" style="width: 819px; height: 146px;" id="lineChart" height="146"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right col-lg-4">
+                                                    <div class="ibox">
+                                                        <div class="">
+                                                            <div class="col-xs-12">
+                                                                <div class="row">
+                                                                    <div class="customstatbox">
+                                                                        <div clas="col-xs-12">
+                                                                            <div class="pull-right">
+                                                                                <div class="btn-group">
+                                                                                    <button class="btn btn-xs btn-white active" type="button">Today</button>
+                                                                                    <button class="btn btn-xs btn-white" type="button">Monthly</button>
+                                                                                    <button class="btn btn-xs btn-white" type="button">Annual</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row"><h2>2,346</h2></div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class=" col-xs-6">
+                                                                                    <div class="go-small row">
+                                                                                        <div class="m-t-sm small">Tracking versus last month</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="row">
+                                                                                        <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="progress progress-mini">
+                                                                                    <div style="width: 34%;" class="progress-bar"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="customstatbox">
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row"><h2>2,346</h2></div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="go-small row">
+                                                                                        <div class="m-t-sm small">Tracking versus last month</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="row">
+                                                                                        <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="progress progress-mini">
+                                                                                    <div style="width: 34%;" class="progress-bar"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 193.237px;">
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sortable-view" class="col-xs-12">
+                        <div class="col-xs-12 ui-sortable">
+                            <div class="graphs ibox">
+                                <div class="ibox-title">
+                                    <h5>Track my other page</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Edit tracking parameters</a>
+                                            </li>
+                                            <li><a href="#">Get tracking code</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ibox-content" style="display: block;">
+                                    <!-- <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"> -->
+                                    <div class="slimScrollDiv">
+                                        <!-- <div class="scroll_content" style="overflow: hidden; width: auto; height: 200px;"> -->
+                                        <div class="scroll_content">
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <div class="row">
+                                                        <div class="ibox float-e-margins">
+                                                            <canvas width="819" style="width: 819px; height: 146px;" id="lineChart2" height="146"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right col-lg-4">
+                                                    <div class="ibox">
+                                                        <div class="">
+                                                            <div class="col-xs-12">
+                                                                <div class="row">
+                                                                    <div class="customstatbox">
+                                                                        <div clas="col-xs-12">
+                                                                            <div class="pull-right">
+                                                                                <div class="btn-group">
+                                                                                    <button class="btn btn-xs btn-white active" type="button">Today</button>
+                                                                                    <button class="btn btn-xs btn-white" type="button">Monthly</button>
+                                                                                    <button class="btn btn-xs btn-white" type="button">Annual</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row"><h2>2,346</h2></div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class=" col-xs-6">
+                                                                                    <div class="go-small row">
+                                                                                        <div class="m-t-sm small">Tracking versus last month</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="row">
+                                                                                        <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="progress progress-mini">
+                                                                                    <div style="width: 34%;" class="progress-bar"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="customstatbox">
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row"><h2>2,346</h2></div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="go-small row">
+                                                                                        <div class="m-t-sm small">Tracking versus last month</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xs-6">
+                                                                                    <div class="row">
+                                                                                        <div class="stat-percent font-bold text-navy">98% <i class="fa fa-bolt"></i></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <div class="row">
+                                                                                <div class="progress progress-mini">
+                                                                                    <div style="width: 34%;" class="progress-bar"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 193.237px;">
+                                        </div>
+                                        <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="display: none;" id="modal-form" class="modal fade" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button style="position: relative; top: 10px;" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <div class="compubox">
+                                <img alt="image" class="img-responsive" src="images/grey-mac.png" />
+                                <div class="title">Create new tracking</div>
+                            </div>
+                        
+                        <!-- <i class="fa fa-laptop modal-icon"></i>
+                        <h5 class="modal-title">Create new tracking</h5> -->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <form class="form-horizontal" method="get">
+                                <div class="form-group">
+                                    <label class="col-sm-3 pull-left control-label">Tracking name</label>
+                                    <div class="col-sm-8"><input type="text" class="form-control" placeholder="Tracking name"></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <label class="col-sm-3 pull-left control-label"></label>
+                                        <div class="col-sm-4">
+                                            <div class="i-checks">
+                                                <label class=""> 
+                                                    <div class="iradio_square-green" style="position: relative;">
+                                                        <input type="radio" name="a" value="option1" style="position: absolute; opacity: 0;">
+                                                            <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;">
+                                                            </ins>
+                                                    </div>
+                                                    <i></i>
+                                                    <span class="i-chk1">Track all visits</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="i-checks">
+                                                <label class=""> 
+                                                    <div class="iradio_square-green" style="position: relative;">
+                                                        <input type="radio" name="a" value="option2" style="position: absolute; opacity: 0;">
+                                                            <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;">
+                                                            </ins>
+                                                    </div>
+                                                    <i></i>
+                                                    <span class="i-chk1">Only track known leads</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-sm-4">
+                                            
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-push-1 col-xs-9">
+                                        <div class="row">
+                                            <h5>Tracking options - <small class="smalltxt">select which information to collect</small></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="col-sm-3">
+
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Website</span> </label>
+                                            </div>
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">IP Address</span> </label>
+                                            </div>
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Tags</span> </label>
+                                            </div>
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Traffic source</span> </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Device</span> </label>
+                                            </div>
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Browser</span> </label>
+                                            </div>
+                                            <div class="i-checks"><label class=""> <div class="icheckbox_square-green" style="position: relative;"><input type="checkbox" checked="" value="" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div> <i></i> 
+                                                <span class="i-chk1">Location</span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-12">
+                                            <div class="col-xs-12">
+                                                <div class="copy-clip pull-right">
+                                                    <button class="btn btn-warning btn-xs demo3" data-clipboard-target="#copytext">Copy to clipboard</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <p><strong>Tracking code&nbsp;</strong>- copy this to your pages</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="col-sm-3">
+
+                                        </div>
+                                        <div class="col-sm-10 col-sm-offset-2">
+                                            <div class="pull-right">
+                                                <button type="submit" class="btn btn-white btn-rounded">Cancel</button>&nbsp;&nbsp;
+                                                <button type="submit" class="btn btn-primary btn-rounded">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-sm-6 b-r"><h3 class="m-t-none m-b">Sign in</h3>
+
+                                <p>Sign in today for more expirience.</p>
+
+                                <form role="form">
+                                    <div class="form-group"><label>Email</label> <input placeholder="Enter email" class="form-control" type="email"></div>
+                                    <div class="form-group"><label>Password</label> <input placeholder="Password" class="form-control" type="password"></div>
+                                    <div>
+                                        <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                        <label> <div style="position: relative;" class="icheckbox_square-green"><input style="position: absolute; opacity: 0;" class="i-checks" type="checkbox"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div> Remember me </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6"><h4>Not a member?</h4>
+                                <p>You can create an account:</p>
+                                <p class="text-center">
+                                    <a href=""><i class="fa fa-sign-in big-icon"></i></a>
+                                </p>
+                        </div> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/vendor/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/vendor/inspinia.js"></script>
+
+    <!-- Load JS here for greater good =============================-->
+    <script>
+        var siteUrl = '';
+        var baseUrl = '';
+    </script>
+    <!--<script src="js/vendor/flat-ui-pro.min.js"></script>-->
+    <script src="js/vendor/chosen.min.js"></script>
+    <script src="js/vendor/jquery.zoomer.js"></script>
+    <script src="js/vendor/spectrum.js"></script>
+    <script src="js/vendor/ace/ace.js"></script>
+    <script src="js/builder.js"></script>
+
+     <!-- ChartJS-->
+    <script src="js/Chart.js"></script>
+    <script src="js/chartjs-demo.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/icheck.js"></script>
+
+    <script src="js/Draggable.js"></script>
+
+    <script src="js/jquery-ui.js"></script>
+
+    <!-- Clipboard -->
+    <script src="js/clipboard.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+
+     <script>
+         $(document).ready(function(){
+             <!-- Enable portlets -->
+            WinMove();
+        });
+    </script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+        // $(document).ready(function () { });
+        // $(document).ready(function(){
+        //     $('.innermenu').mouseover(function()
+        //     {
+        //         $(this).stop().animate({left: "+=190px",}, 500);
+        //     });
+
+        //     $('.innermenu').mouseout(function()
+        //     {
+        //         $(this).stop().animate({left: "-=190px",}, 500);
+        //     });
+        // });
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IVO-campign</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/flat-ui-pro.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/templatestyle.css" rel="stylesheet" />
+
+    <!--<link href="css/flat-ui-pro.css" rel="stylesheet">-->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/builder.css" rel="stylesheet">
+    <link href="css/mediaqueries.css" rel="stylesheet">
+    <link href="css/spectrum.css" rel="stylesheet">
+    <link href="css/chosen.css" rel="stylesheet">
+    <link href="css/customstyles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="builder">
+        <form id="TemplateBuilderForm" runat="server"></form>
+        <div id="wrapper">
+            <nav style="height: 100%;" class="navbar-fullheight navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav metismenu" id="side-menu">
+                        <li class="nav-header">
+                            <div class="dropdown profile-element">
+                                <span>
+                                    <img alt="image" class="img-responsive" src="images/templatelogo.png" />
+                                </span>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="">Contacts</a></li>
+                                    <li><a href="">Mailbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div class="logo-element">
+                                IVO+
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-tachometer"></i><span class="nav-label">Dashboards</span></a>
+                        </li>
+                        <!--
+                                            <li>
+                                                <a href="layouts.html"><i class="fa fa-user"></i> <span class="nav-label">Leads &amp; Segments</span></a>
+                                            </li>
+                        -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Leads &amp; Segments</span><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse in">
+                                <li class="active"><a href="#">LEAD INFORMATION</a></li>
+                                <li><a href="#">BLACK LIST <span>(<i>1</i>)</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-clock-o"></i><span class="nav-label">Activities</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-list"></i><span class="nav-label">Campigns</span></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-signal"></i><span class="nav-label">Reporting</span>  </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="page-wrapper" class="gray-bg">
+                <div class="row border-bottom">
+                    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                        <div class="navbar-header">
+                            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+                            <form role="search" class="navbar-form-custom" action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-envelope"></i><span class="label label-warning">16</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a href="" class="pull-left">
+                                                <img alt="image" class="img-circle" src="images/logo.png">
+                                            </a>
+                                            <div class="media-body">
+                                                <small class="pull-right">46h ago</small>
+                                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                                <br>
+                                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="">
+                                                <i class="fa fa-envelope"></i><strong>Read All Messages</strong>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-bell"></i><span class="label label-primary">8</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts">
+                                    <li>
+                                        <a href="">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i>You have 16 messages
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i>3 New Followers
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="">
+                                            <div>
+                                                <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-sign-out"></i>Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- <div class="wrapper wrapper-content animated fadeIn"> -->
+                <div class="animated fadeIn">
+                    <div class="row">
+                        <!--<div class="ibox-content tab-sub">
+                            <div class="tabs-container animated fadeInRight">
+                            </div>
+                        </div>
+                        <a class="formedit btn btn-primary" id="buttonid" name="buttonid" data-label="1_2" href="#">edit</a>-->
+                        <div class="innerbox">
+                            <!-- Side collapsing menu -->
+                                <div class="innermenu" id="innermenu">
+                                    <div class="innermain" id="innermain">
+                                        <h3>
+                                            <span class="fui-list"></span> Blocks
+                                        </h3>
+                                        <ul id="elementCats">
+                                            <li><a href="#" id="all">All Blocks</a></li>
+                                        </ul>
+                                        <a class="toggle" href="#">
+                                            <span class="fui-gear"></span>
+                                        </a>
+                                        <hr>
+                                        <h3>
+                                            <span class="fui-windows"></span> Pages
+                                        </h3>
+                                        <ul id="pages">
+                                            <li style="display: none;" id="newPageLI">
+                                                <input type="text" value="index" name="page">
+                                                <span class="pageButtons">
+                                                    <a href="" class="fileEdit"><span class="fui-new"></span></a>
+                                                    <a href="" class="fileDel"><span class="fui-cross"></span></a>
+                                                    <a class="btn btn-xs btn-primary btn-embossed fileSave" href="#"><span class="fui-check"></span></a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="sideButtons clearfix">
+                                            <a href="#" class="btn btn-primary btn-sm btn-embossed" id="addPage">
+                                                <span class="fui-plus"></span> Add Page
+                                            </a>
+                                        </div>
+                                    </div><!-- /##main -->
+                                    <div class="second" id="second">
+                                        <ul id="elements"></ul>
+                                    </div><!-- /#second -->
+                                </div><!-- /#innermenu -->
+                            <!-- Side collapsing menu -->
+                            <div class="innercontainer">
+
+                            <!-- Inner page header -->
+                                <header class="clearfix affix">
+                                    <ul class="nav nav-pills nav-inverse pull-left responsiveToggle" id="responsiveToggle">
+                                        <li>
+                                            <a href="" data-responsive="mobile">
+                                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" data-responsive="tablet">
+                                                <i class="fa fa-tablet" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="" data-responsive="desktop">
+                                                <i class="fa fa-desktop" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" id="clearScreen" class="btn btn-danger btn-embossed pull-right actionButtons">
+                                        <span class="fui-trash"></span> Empty Page
+                                    </a>
+                                    <a href="#previewModal" data-toggle="modal" class="btn btn-inverse btn-embossed pull-right actionButtons" id="buttonPreview">
+                                        <span class="fui-window"></span> Preview
+                                    </a>
+                                    <a href="#exportModal" id="exportPage" data-toggle="modal" class="btn btn-info btn-embossed pull-right actionButtons">
+                                        <span class="fui-export"></span> Export
+                                    </a>
+                                    <a href="#" id="savePage" data-toggle="modal" class="btn btn-primary btn-embossed pull-right">
+                                        <span class="fui-check"></span>
+                                        <span class="bLabel">Nothing to save</span>
+                                    </a>
+                                </header>
+                            <!-- Inner page header -->
+
+                            <!-- Inner screen white body space -->
+                                <div class="screen" id="screen">
+                                    <div class="toolbar">
+                                        <div class="buttons clearfix">
+                                            <span class="left red"></span>
+                                            <span class="left yellow"></span>
+                                            <span class="left green"></span>
+                                        </div>
+
+                                        <div class="title">
+                                            <span id="pageTitle">index</span>
+                                        </div>
+                                    </div>
+
+                                    <div id="frameWrapper" class="frameWrapper empty">
+                                        <div id="pageList">
+                                        </div>
+                                        <div class="start" id="start">
+                                            <span>BUILD YOUR PAGE BY DRAGGING BLOCKS ONTO THE CANVAS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- Inner screen white body space -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/vendor/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/vendor/inspinia.js"></script>
+
+    <!-- Load JS here for greater good =============================-->
+    <script>
+        var siteUrl = '';
+        var baseUrl = '';
+    </script>
+    <!--<script src="js/vendor/flat-ui-pro.min.js"></script>-->
+    <script src="js/vendor/chosen.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.zoomer.js"></script>
+    <script src="js/vendor/spectrum.js"></script>
+    <script src="js/vendor/ace/ace.js"></script>
+    <script src="js/builder.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+        // $(document).ready(function () { });
+        // $(document).ready(function(){
+        //     $('.innermenu').mouseover(function()
+        //     {
+        //         $(this).stop().animate({left: "+=190px",}, 500);
+        //     });
+
+        //     $('.innermenu').mouseout(function()
+        //     {
+        //         $(this).stop().animate({left: "-=190px",}, 500);
+        //     });
+        // });
+    </script>
+</body>
+</html>

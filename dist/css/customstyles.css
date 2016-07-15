@@ -1,0 +1,584 @@
+.graphs {
+}
+.graphs > h1, h2, h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-style: 500;
+}
+.go-small > .m-t-sm {
+	margin-top: 0;
+}
+.customstatbox {
+	overflow: hidden;
+	clear:both;
+	margin: 10px 0 0 0;
+}
+.customstatbox:first-child {
+	margin-top: 0;
+}
+.smalltxt {
+	color: #929292;
+	font-size: 95%;
+}
+
+
+/***** Modal window styles *****/
+
+.compubox {
+	display: inline-block;
+	width: 100%;
+	// margin: 2% 0;
+	outline: none;
+}
+.compubox > img {
+	text-align: center;
+	margin: 0 auto;
+}
+.compubox > .title {
+	text-align: center;
+	margin: 2% auto 3%;
+	font-size: 1.8em;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+span.i-chk1 {
+	font-size: 0.8em;
+	font-weight: 600;
+	padding: 0 0 0 5px;
+}
+
+/***** Modal window styles *****/
+
+
+
+.innerbox {
+	position: relative;
+	// border: solid 4px #00ac00;
+	height: 100%;
+	max-height: 90%;
+}
+
+.innerbox > .innercontainer {
+	width: 100%;
+	margin-top: 0px;
+	position: relative;
+	padding: 0px;
+	background: #ECF0F1;
+	// padding-top: 60px;
+}
+
+
+.innercontainer > header {
+	position: relative;
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	background: #35495D;
+	margin-bottom: 20px;
+	box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.05);
+	height: 41px;
+}
+
+.innercontainer > header > .responsiveToggle {
+	margin-left: 60px;
+}
+
+.innercontainer > header > .responsiveToggle a {
+	width: 58px;
+	text-align: center;
+	padding: 11px 18px 11px;
+	font-size: 20px;
+	height: 41px;
+}
+
+.innercontainer > header.affix {
+	left: 0;
+	top:0px;
+    width: 100%;
+    z-index: 1040;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* innermenu */
+
+.innermenu {
+	position: relative;
+	overflow: hidden;
+	// position: absolute;
+	// position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	z-index: 1041;
+}
+
+.innermenu .toggle {
+	background: none repeat scroll 0 0 #4c5f72;
+	color: #eee;
+	height: 41px;
+	line-height: 41px;
+	position: absolute;
+	right: 11px;
+	// right: -42px;
+	text-align: center;
+	top: 8px;
+	font-size: 18px;
+	width: 42px;
+}
+
+.innermenu .innermain {
+	background: none repeat scroll 0 0 #4c5f72;
+	min-height: 895px;
+    height: 100% !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 20px;
+    // width: 210px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-shadow: -10px 0 2px rgba(0, 0, 0, 0.08) inset;
+}
+
+.innermenu .innermain h3 {
+	font-size: 17px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0px 0px 10px 20px;
+	letter-spacing: 1px;
+}
+
+.innermenu .innermain h3 > span {
+	font-size: 15px;
+}
+
+.innermenu .innermain > ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+.innermenu .innermain > ul > li {
+	list-style: none;
+	list-style-type: none;
+}
+
+.innermenu .innermain > ul > li > a {
+	color: #ecf0f1;
+	display: block;
+	line-height: 35px;
+	-webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+.innermenu .innermain > ul#elementCats > li > a:hover, .innermenu .innermain > ul#templatesUl > li > a:hover, .innermenu .innermain > ul#elementCats > li > a.active, .innermenu .innermain > ul#templatesUl > li > a.active {
+	color: #fff;
+	background: #1f2e3c;
+}
+
+.innermain > .sideButtons {
+	margin-left: 20px;
+	width: 170px;
+	margin-bottom: 30px;
+}
+
+.innermain > .sideButtons > * {
+	margin: 0px;
+	/*float: left;
+	width: 50%;*/
+	width: 100%;
+}
+
+.innermain > hr {
+	border-top: 1px dashed #ECF0F1 !important;
+}
+
+.innermenu .second {
+	// position: absolute;
+	// left: 210px;
+	position: fixed;
+	left: 400px;
+	background: #1f2e3c;
+	width: 0px;
+	height: 100%;
+	display: none;
+	box-shadow: inset 5px 0px 5px rgba(0,0,0,0.3);
+	z-index: 1000;
+	overflow-y: auto !important;
+	padding-top: 0px;
+}
+
+.innermenu .second ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.innermenu .second ul li, li.element {
+	list-style: none;
+	list-style-type: none;
+	padding: 15px 15px 0px;
+}
+
+.innermenu .second ul li, li.element > img {
+	width: 100%;
+	max-width: 100%;
+	cursor: move;
+}
+
+li.element {
+	padding: 0px;
+}
+
+.innermenu .second ul li iframe {
+	border: 0px;
+	width: 270px;
+	background: #fff;
+
+}
+
+.innermenu .second ul li iframe html {
+	-ms-zoom: 0.25;
+	        -moz-transform: scale(0.25);
+	        -moz-transform-origin: 0 0;
+	        -o-transform: scale(0.25);
+	        -o-transform-origin: 0 0;
+	        -webkit-transform: scale(0.25);
+	        -webkit-transform-origin: 0 0;
+}
+
+.innermenu .second ul li .zoomer-wrapper a {
+	cursor: move;
+}
+
+.innermenu #templates li .zoomer-cover a.btn-danger {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.innermenu .innermain ul#pages {
+	margin-bottom: 15px;
+}
+
+.innermenu .innermain ul#pages li {
+	display: block;
+	height: 35px;
+	cursor: pointer;
+}
+
+.innermenu .innermain ul#pages li.active {
+	background: #1f2e3c;
+}
+
+.innermenu .innermain ul#pages li input {
+	float: left;
+	font-size: 16px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	width: 54%;
+	margin-left: 30px;
+	border: 0px;
+	color: #ecf0f1;
+	background: none;
+}
+
+.innermenu .innermain ul#pages li > a {
+	float: left;
+}
+
+.innermenu .innermain ul#pages li > span {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	margin-right: 20px;
+	margin-top: 8px;
+	display: none;
+}
+
+.innermenu .innermain ul#pages li.active > span {
+	display: block;
+}
+
+.innermenu .innermain ul#pages li > span a {
+	color: #CBD0D3;
+	float: right;
+	margin-left: 5px;
+	transform: color 0.7s;
+}
+
+.innermenu .innermain ul#pages li > span a.btn {
+	color: #fff;
+	position: relative;
+	top: -3px;
+	display: none;
+}
+
+.innermenu .innermain ul#pages li.active.edit > span a.btn {
+	display: inline;
+}
+
+.innermenu .innermain ul#pages li.active.edit > span .fileDel, .innermenu .innermain ul#pages li.active.edit > span .fileEdit {
+	display: none;
+}
+
+.innermenu .innermain ul#pages li > span a:hover.fileDel {
+	color: #E74C3C;
+}
+
+.innermenu .innermain ul#pages li > span a:hover.fileEdit {
+	color: #2ECC71;
+}
+
+/* end side */
+
+/* .menu - .innermenu
+   .main - .innermain
+*/
+
+/* UI Sortable */
+.ui-sortable .ibox-title {
+  cursor: move;
+}
+.ui-sortable-placeholder {
+  border: 1px dashed #cecece !important;
+  visibility: visible !important;
+  background: #e7eaec;
+}
+.ibox.ui-sortable-placeholder {
+  margin: 0 0 23px !important;
+}
+
+/* Clipboard */
+.copy-clip {
+	position: relative;
+	top: 15px;
+}
+
+.inmodal .modal-icon {
+    color: #e2e3e3;
+    font-size: 84px;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+
+/****.screen-main styles ***/
+
+.screen-main {
+	display: inline-block;
+	position: relative;
+	margin: 2% 0 0 0;
+	// left: 12%;
+	// margin: 0 0 0 12%;
+	// margin: 0px auto 30px;
+	// width: 86%;
+}
+
+.screen-main.mobile, .screen-main.tablet {
+	border-left: 2px solid #E1E0E0;
+	border-right: 2px solid #E1E0E0;
+	border-bottom: 2px solid #E1E0E0;
+}
+
+.screen-main .zoomer-wrapper {
+	background: #fff;
+}
+
+.screen-main .start {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+}
+
+.screen-main .start > span {
+	display: block;
+	background: #34495E;
+	padding: 10px 20px;
+	width: 35%;
+	// width: 450px;
+	// font-size: 13px;
+	color: #fff;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 170px auto 0px;
+}
+
+.screen-main.mobile .start > span {
+	width: 300px;
+}
+
+.screen-main .toolbar {
+	background: #E1E0E0;
+	height: 35px;
+	padding: 0px 0px 0px 11px;
+}
+
+.screen-main .toolbar .buttons {
+	float: left;
+	height: 13px;
+	margin-top: 11px;
+}
+
+.screen-main .toolbar .title {
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	margin-right: 80px;
+	padding-top: 5px;
+}
+
+.screen-main .toolbar .left {
+	display: block;
+	width: 13px;
+	height: 13px;
+	float: left;
+	border-radius: 13px;
+	margin-right: 6px;
+}
+
+.screen-main .toolbar .left.red {
+	background: #E74C3C;
+}
+
+.screen-main .toolbar .left.yellow {
+	background: #F4A62A;
+}
+
+.screen-main .toolbar .left.green {
+	background: #16A085;
+}
+
+.screen-main .frameWrapper {
+	background: #fff;
+	padding-top: 0px;
+	position: relative;
+	// height: 90%;
+}
+
+.screen-main .frameWrapper.empty {
+	min-height: 400px;
+	border:solid 2px #ffcc00;
+}
+
+.screen-main .frameWrapper #pageList ul {
+	list-style: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	display: none;
+	height: 100%;
+	min-height: 300px;
+}
+
+.screen-main .frameWrapper #pageList ul.active {
+	display: block;
+}
+
+.screen-main .frameWrapper #pageList ul li {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.screen-main .frameWrapper #pageList ul li .editorButtons {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 100;
+}
+
+.screen-main .frameWrapper #pageList ul iframe {
+	border: 0px;
+	width: 100%;
+}
+
+.screen-main .frameWrapper #pageList ul li .zoomer-cover {
+	cursor: move;
+	overflow: hidden !important;
+}
+
+.screen-main .frameWrapper #pageList ul li .zoomer-small, .screen-main .frameWrapper #pageList ul li .zoomer-small iframe {
+	overflow: hidden !important;
+	overflow-y: hidden !important;
+}
+
+.screen-main .frameCover {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: auto;
+	height: auto;
+}
+
+.screen-main .frameCover.fresh {
+    background: #ffffff url('../images/loading.gif') 50% 50% no-repeat;
+}
+
+.screen-main .frameCover button, .screen-main .frameWrapper #pageList ul li .editorButtons button {
+	padding-right: 3px;
+}
+
+.screen-main .frameCover button > span, .screen-main .frameWrapper #pageList ul li .editorButtons button span {
+	width: 0px;
+    display: inline-block;
+    overflow: hidden;
+    float: right;
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    transition: width 0.25s linear 0s;
+	-webkit-transition: width 0.25s linear 0s;
+	-moz-transition: width 0.25s linear 0s;
+}
+
+.screen-main .frameCover button:hover > span, .screen-main .frameWrapper #pageList ul li .editorButtons button:hover span {
+	width: 70px;
+	transition-delay: 0.25s;
+}
+
+.screen-main li .frameCover {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+	-webkit-transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+	-moz-transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+.screen-main li:hover .frameCover {
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
+}
+
+.screen-main.mobile li:hover .frameCover {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.screen-main .frameCover button.btn-danger, .screen-main .frameCover button.btn-warning, .screen-main .frameCover button.btn-inverse, .frameCover button.btn-default {
+	border-radius: 0px;
+	float: right;
+	min-width: 42px;
+}
+
+.screen-main .aceEditor {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/****.screen-main styles ***/
